@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Portfolio</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css') }}">
+	<script src="https://kit.fontawesome.com/781f1a974c.js" crossorigin="anonymous"></script>
+	<style>
+		.bgimg-1, .bgimg-2, .bgimg-3 {
+			position: relative;
+			opacity: 0.7;
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+
+		}
+		.bgimg-1 {
+			/*background-image:url({{ url_for('static',filename='img (1).jpg')  }});*/
+			background-image:url("https://i.ibb.co/kqnBMmh/Madhav-MP.jpg");
+			min-height: 100%;
+		}
+
+		.bgimg-2 {
+			background-image: url("https://i.ibb.co/JBfNpqQ/Madhav-DP.jpg");
+			min-height: 400px;
+		}
+
+		.bgimg-3 {
+			background-image: url("https://i.ibb.co/JBfNpqQ/Madhav-DP.jpg");
+			min-height: 400px;
+		}
+		/*.framework>.hover_img { display: none; }
+		.framework:hover>.hover_img 
+		{
+			display: block; 
+			}*/
+		</style>
+
+	</head>
+	<body>
+
+		{# NAVIGATION BAR	 #}
+	{# <div id="myNav" class="overlay">
+
+		<!-- Button to close the overlay navigation -->
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+		<!-- Overlay content -->
+		<div class="overlay-content">
+			<a href="#">About</a>
+			<a href="#">Services</a>
+			<a href="#">Clients</a>
+			<a href="#">Contact</a>
+		</div>
+
+	</div>
+
+	<!-- Use any element to open/show the overlay navigation menu -->
+	<div class="container" style="border-style: solid;">
+		<div class="row" style="border-style: solid">
+			<div class="col">
+				<span onclick="openNav()" >&#9776; open</span>	
+			</div>
+			<div class="col">
+				&nbsp;
+			</div>	
+		</div>
+
+	</div> #}
+
+	{# 					Parallax 					#}
+	<div class="bgimg-1" >
+		<div class="caption" >
+			<span class="border" style="border-style: solid;">Madhav Parikh</span>
+		</div>
+	</div>
+
+	<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+		<h3 style="text-align:center;">About me </h3>
+		<p>
+			<code>
+				<center> O V E R T H I N K E R. </center>
+			</code>
+		</p>
+	</div>
+
+	<div class="bgimg-2">
+		{# <div class="caption">
+			<span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">LESS HEIGHT</span>
+		</div> #}
+	</div>
+	<div style="position:relative;">
+		<div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+			<div class="container">
+				<h3 style="text-align: center;color: white;">Insights & Abilities</h3>
+				<span>HTML,CSS,Javascript</span><span style="float:right;">90%</span>
+				<div class="progress">
+					<div class="progress-bar bg-danger progress-bar-striped" style="width:90%"></div>
+				</div>
+				<br/>
+				<span>PHP</span><span style="float:right;">85%</span>
+				<div class="progress">
+					<div class="progress-bar bg-success progress-bar-striped" style="width:75%"></div>
+				</div>
+				<br/>
+				<span>Python</span><span style="float:right;">60%</span>
+				<div class="progress">
+					<div class="progress-bar bg-secondary progress-bar-striped" style="width:60%"></div>
+				</div>
+				<br/>
+				<span>Version Control System (GitHub) </span><span style="float:right;">50%</span>
+				<div class="progress">
+					<div class="progress-bar bg-info progress-bar-striped" style="width:50%"></div>
+				</div>
+				<br/>
+				<span>Docker</span><span style="float:right;">20%</span>
+				<div class="progress">
+					<div class="progress-bar bg-dark progress-bar-striped" style="width:20%"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="bgimg-3">
+		{# <div class="caption">
+			<span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">SCROLL UP</span>
+		</div> #}
+	</div>
+
+	<div style="position:relative;">
+		<div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="container_img">
+							<center>
+								<span style="font-size: 10em;">
+									<i class="fab fa-php"></i>
+								</span>
+							</center>
+							<div class="overlay">
+								{# <div class="text">Laravel</div> #}
+								<div class="text"><center>
+									<span style="font-size: 6em;">
+										<i class="fab fa-laravel"></i>
+									</span>
+								</center></div>
+							</div>						
+						</div>
+					</div>
+					<div class="col">
+						<div class="container_img">
+							<center>
+								<span style="font-size: 10em;">
+									<i class="fab fa-python"></i>
+								</span>	
+							</center>
+							<div class="overlay">
+								<div class="text">Flask </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div></div>
+
+		<div class="bgimg-1">
+		{# <div class="caption">
+			<span class="border">COOL!</span>
+		</div> #}
+	</div>
+	
+	<script type="text/javascript">
+		
+		function openNav() {
+			document.getElementById("myNav").style.width = "100%";
+		}
+
+		/* Close when someone clicks on the "x" symbol inside the overlay */
+		function closeNav() {
+			document.getElementById("myNav").style.width = "0%";
+		}
+		
+	</script>
+</script>
+</body>
+</html>
