@@ -32,6 +32,14 @@ body, html {
       min-height: 400px;
     }
 
+@media (min-width: 320px) and (max-width: 768px)
+{
+  .bgimg-1
+  {
+     background-image:url("https://i.ibb.co/ZJ29mvW/IMG-8340.jpg");
+      min-height: 100%;
+  }
+}
 
 /* The Overlay (background) */
 .overlay {
